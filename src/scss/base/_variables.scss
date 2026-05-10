@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 // Fuentes
-$fuente_principal: "Poppins", sans-serif;
-$fuente_secundaria: "Inter", sans-serif;
+$fuenteHeading: "Poppins", sans-serif;
+$fuentePrincipal: "Inter", sans-serif;
 
 // Tamaño de Media Queries
 $telefonoPequeno: 360px;
@@ -14,18 +12,28 @@ $desktop: 1200px;
 $desktopXL: 1400px;
 
 // Colores
+$verde: #9ACD32;
+$verdeOscuro: #1F4037;
+$verdeOliva: #5F7A33;
+
+$fondoPrincipal: #F1F5F2;
+$fondoSecundario: #E4ECE7;
+
+$textoPrincipal: #23322D;
+$textoSecundario: #5E6A65;
+
+$amarillo: #F4D64E;
+
+$blanco: #FAFAF7;
 $negro: #000000;
-$amarillo: #E08709;;
-$verde: #71B100;
-$blanco: #FFFFFF;
-$gris: #e1e1e1;
-$grisOscuro: #333333;
 $rojo: #ED4337;
 
 $separacion: 5rem;
 
 // Fuentes
-$delgada: 300;
-$regular : 400;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
 $bold: 700;
-$black: 900
+$black: 900;

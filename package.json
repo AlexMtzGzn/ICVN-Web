@@ -1,0 +1,38 @@
+{
+  "name": "icvn-web",
+  "version": "1.0.0",
+  "description": "Página web oficial de la Iglesia Cristiana Vida Nueva",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMtzGzn/ICVN-Web.git"
+  },
+  "keywords": [
+    "Iglesia",
+    "ICVN",
+    "Cristiana"
+  ],
+  "author": "Genaro Ballesteros, Alejandro Martínez Guzmán, Jaime López Lara",
+  "license": "ISC",
+   "devDependencies": {
+        "autoprefixer": "^10.3.1",
+        "cssnano": "^5.0.7",
+        "gulp": "^4.0.2",
+        "gulp-avif": "^1.0.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^6.0.1",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-terser": "^2.1.0",
+        "gulp-webp": "^4.0.1",
+        "postcss": "^8.3.6",
+        "sass": "^1.97.3"
+      },
+  "bugs": {
+    "url": "https://github.com/AlexMtzGzn/ICVN-Web/issues"
+  },
+  "homepage": "https://github.com/AlexMtzGzn/ICVN-Web#readme"
+}

@@ -13,14 +13,14 @@ html {
 }
 
 body {
-    font-family: v.$fuente_principal;
+    font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
     line-height: 1.8;
 
 }
 
 p {
-    color: v.$negro;
+    color: v.$textoPrincipal;
     font-size: 2rem;
 }
 
@@ -43,7 +43,7 @@ picture {
 h1,
 h2,
 h3 {
-    font-family: v.$fuente_principal;
+    font-family: v.$fuentePrincipal;
     margin: calc(v.$separacion / 2) 0;
     font-weight: 300;
     text-align: center;
