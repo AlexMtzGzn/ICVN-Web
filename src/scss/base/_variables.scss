@@ -4,9 +4,13 @@
 $fuente_principal: 'Lato', sans-serif;
 
 // Tamaño de Media Queries
+$telefonoPequeno: 360px;
 $telefono: 480px;
-$tablet: 768px;
-$desktop: 1024px;
+$telefonoGrande: 576px;
+$tabletPequena: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+$desktopXL: 1400px;
 
 // Colores
 $negro: #000000;
