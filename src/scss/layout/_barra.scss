@@ -1,0 +1,155 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+    background-color: rgba(14, 17, 20, .96);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .18);
+}
+
+.barra {
+    padding: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include m.tablet {
+        padding: 2rem 0;
+    }
+
+    &__logo {
+        width: 15rem;
+        flex-shrink: 0;
+
+        @include m.tablet {
+            width: 18rem;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__menu {
+        width: 4.4rem;
+        height: 4.4rem;
+        border: 1px solid rgba(164, 207, 58, .35);
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, .05);
+        color: v.$blanco;
+        font-size: 2.8rem;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        transition: all .3s ease;
+
+        &:hover {
+            background-color: rgba(164, 207, 58, .12);
+            border-color: v.$verde;
+        }
+
+        @include m.tablet {
+            display: none;
+        }
+    }
+
+    &__navegacion {
+        position: absolute;
+        top: calc(100% + 1.2rem);
+        left: 0;
+        width: 100%;
+        background-color: v.$negro;
+        border: 1px solid rgba(255, 255, 255, .08);
+        border-radius: 1.6rem;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .35);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-1rem);
+        transition: max-height .35s ease, opacity .3s ease, transform .3s ease;
+        z-index: 20;
+
+        &.mostrar {
+            max-height: 45rem;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @include m.tablet {
+            position: static;
+            width: auto;
+            max-height: none;
+            overflow: visible;
+            opacity: 1;
+            transform: none;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            @include m.tablet {
+                flex-direction: row;
+                align-items: center;
+                padding: 0;
+                gap: 2.8rem;
+            }
+        }
+
+        a {
+            display: block;
+            color: rgba(250, 250, 247, .92);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 1.2rem 1rem;
+            border-radius: .8rem;
+            transition: all .3s ease;
+            position: relative;
+
+            &:hover,
+            &.activo {
+                color: v.$verde;
+                background-color: rgba(164, 207, 58, .08);
+            }
+
+            @include m.tablet {
+                padding: 0;
+                background-color: transparent;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -.8rem;
+                    width: 0;
+                    height: .2rem;
+                    background-color: v.$verde;
+                    transition: width .3s ease;
+                }
+
+                &:hover,
+                &.activo {
+                    background-color: transparent;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

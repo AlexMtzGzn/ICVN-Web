@@ -1,0 +1,1 @@
+const menuBtn=document.querySelector("#menuBtn"),navegacion=document.querySelector("#navegacion");menuBtn.addEventListener("click",()=>{navegacion.classList.toggle("mostrar")});

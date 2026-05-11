@@ -3,13 +3,9 @@ $fuenteHeading: "Poppins", sans-serif;
 $fuentePrincipal: "Inter", sans-serif;
 
 // Tamaño de Media Queries
-$telefonoPequeno: 360px;
 $telefono: 480px;
-$telefonoGrande: 576px;
-$tabletPequena: 768px;
-$tablet: 992px;
+$tablet: 768px;
 $desktop: 1200px;
-$desktopXL: 1400px;
 
 // Colores
 $verde: #9ACD32;
@@ -25,15 +21,13 @@ $textoSecundario: #5E6A65;
 $amarillo: #F4D64E;
 
 $blanco: #FAFAF7;
-$negro: #000000;
+$negro: #11161A;
 $rojo: #ED4337;
 
 $separacion: 5rem;
 
 // Fuentes
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semiBold: 600;
+$delgada: 300;
+$regular : 400;
 $bold: 700;
-$black: 900;
+$black: 900
