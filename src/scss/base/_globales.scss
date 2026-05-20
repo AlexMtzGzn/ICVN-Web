@@ -15,13 +15,11 @@ html {
 body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
-    line-height: 1.8;
-
 }
 
 p {
     color: v.$textoPrincipal;
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
 }
 
 .contenedor {
@@ -44,24 +42,21 @@ h1,
 h2,
 h3 {
     font-family: v.$fuenteHeading;
-    margin: calc(v.$separacion / 2) 0;
     font-weight: 300;
-    text-align: center;
-
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: clamp(4rem, 7vw, 8rem);
 }
 
 h2 {
-    font-size: 3.4rem;
+    font-size: clamp(3rem, 5vw, 5.5rem);
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: clamp(2.4rem, 4vw, 4rem);
 }
 
 h4 {
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 3vw, 3rem);
 }

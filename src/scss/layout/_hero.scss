@@ -28,8 +28,6 @@
 
     &__heading {
         color: v.$blanco;
-        font-family: v.$fuenteHeading;
-        font-size: clamp(4rem, 7vw, 8rem);
         line-height: 1;
         margin: 0 0 2rem 0;
         text-align: center;
@@ -42,7 +40,6 @@
 
     &__texto {
         color: rgba(250, 250, 247, .92);
-        font-size: clamp(1.8rem, 2vw, 2.4rem);
         line-height: 1.5;
         margin-bottom: 3rem;
         text-align: center;

@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="shortcut icon" href="/build/img/Icono_ICVN.jpg" />
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css" />
     <title>Vida Nueva</title>
 </head>
 
@@ -18,12 +18,10 @@
     <header class="header">
         <div class="barra contenedor">
             <div class="barra__logo">
-                <a href="/"><img src="/build/img/iD_VNueva_Blanco.png" alt="Logo Oficial Vida Nueva"></a>
+                <a href="/"><img src="/build/img/iD_VNueva_Blanco.png" alt="Logo Oficial Vida Nueva" /></a>
             </div>
 
-            <button class="barra__menu" id="menuBtn">
-                ☰
-            </button>
+            <button class="barra__menu" id="menuBtn">☰</button>
 
             <nav class="barra__navegacion" id="navegacion">
                 <ul>
@@ -37,18 +35,16 @@
             </nav>
         </div>
     </header>
-    
+
     <section class="hero">
         <div class="hero__overlay"></div>
 
         <div class="hero__contenido contenedor">
-
-            <h1 class="hero__heading">
-                Un lugar para ti
-            </h1>
+            <h1 class="hero__heading">Un lugar para ti</h1>
 
             <p class="hero__texto">
-                Con la ayuda de Dios, haremos cosas poderosas <span>Salmo 108.13</span>
+                Con la ayuda de Dios, haremos cosas poderosas
+                <span>Salmo 108.13</span>
             </p>
 
             <div class="hero__acciones">
@@ -58,7 +54,51 @@
         </div>
     </section>
 
-   
+    <main class="main contenedor">
+        <h2 class="main__titulo centrar-texto">
+            Cuidamos tu vida <span>espiritual</span>
+        </h2>
+
+        <p>Queremos acompañarte en cada etapa de tu caminar con Dios.</p>
+        <p>No tienes que hacerlo solo.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <picture>
+                    <source srcset="img" type="image/avif">
+                    <source srcset="img" type="image/webp">
+                    <img loading="lazy" src="img" alt="descripcion">
+                </picture>
+                <h3 class="centrar-texto">Necesito oración</h3>
+                <p>Estamos aquí para orar contigo y por ti.</p>
+                <a href="#">Pedir oración</a>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="img" type="image/avif">
+                    <source srcset="img" type="image/webp">
+                    <img loading="lazy" src="img" alt="descripcion">
+                </picture>
+                <h3 class="centrar-texto">Quiero hablar con alguien</h3>
+                <p>Siempre habrá alguien dispuesto a escucharte.</p>
+                <a href="#">Contacto pastoral</a>
+            </div>
+
+            <div class="card">
+                <picture>
+                    <source srcset="img" type="image/avif">
+                    <source srcset="img" type="image/webp">
+                    <img loading="lazy" src="img" alt="descripcion">
+                </picture>
+                <h3 class="centrar-texto">Quiero crecer espiritualmente</h3>
+                <p>Conoce nuestros procesos de discipulado y crecimiento.</p>
+                <a href="#">Ver discipulado</a>
+            </div>
+
+        </div>
+    </main>
     <script src="/build/js/app.js"></script>
 </body>
 
