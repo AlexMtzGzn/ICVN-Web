@@ -43,10 +43,6 @@
     text-decoration: none;
     transition: all .3s ease;
     text-align: center;
-
-    // &:hover {
-    //     background-color: color.adjust($bgColor, $lightness: -10%);
-    // }
 }
 
 @mixin boton_fondo($bgColor, $color) {

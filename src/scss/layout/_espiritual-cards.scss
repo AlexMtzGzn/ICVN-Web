@@ -1,0 +1,66 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.spiritual-care {
+
+    &__contenido {
+        text-align: center;
+        max-width: 80rem;
+        margin: 0 auto 6rem auto;
+    }
+
+    &__titulo {
+        margin-bottom: 2rem;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__texto {
+        font-size: 2rem;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    &__grid {
+        display: grid;
+        gap: 2rem;
+
+        @include m.tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__card {
+        background-color: v.$blanco;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.10);
+    }
+
+    &__imagen {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__info {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    &__heading {
+        margin: 0 0 2rem 0;
+    }
+
+    &__descripcion {
+        margin-bottom: 3rem;
+        line-height: 1.2;
+    }
+
+    &__boton {
+       @include m.boton();
+         @include m.boton_fondo(v.$verde, v.$verdeOscuro);
+    }
+}
